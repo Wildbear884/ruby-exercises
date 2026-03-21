@@ -5,7 +5,6 @@ end
 
 def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
-  # "Hello ".concat(string)
   "Hello " + string + "!"
 end
 
