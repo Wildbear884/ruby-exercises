@@ -26,6 +26,7 @@ def add_another_row(chart, row_to_add)
   # then return the chart.
   chart.push(row_to_add)
   chart
+  # The solution is shorter and IMO better.
 end
 
 def delete_seat_from_row(chart, row_index, seat_index)
@@ -49,6 +50,9 @@ def count_empty_seats(chart)
   # NOTE: `chart` should **not** be mutated
   
   chart.flat_map { |row| row.select { |seat| seat.nil? } }.size
+  # The solution is more readable and simpler therefore it is better.
+  # And it shows the importance of looking through the docs as when I made this
+  # I didn't realize there is a count method.
 end
 
 def find_favorite(array_of_hash_objects)
